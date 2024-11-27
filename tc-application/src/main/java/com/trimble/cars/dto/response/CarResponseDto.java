@@ -3,6 +3,7 @@ package com.trimble.cars.dto.response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.trimble.cars.dto.request.LeaseDto;
 import com.trimble.cars.entity.Lease;
+import com.trimble.cars.enums.CarStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,5 +20,6 @@ public class CarResponseDto {
     private Integer id;
     private String model;
     private String variant;
+    private CarStatus status;
     private List<LeaseResponseDto> leaseDtoList;
 }

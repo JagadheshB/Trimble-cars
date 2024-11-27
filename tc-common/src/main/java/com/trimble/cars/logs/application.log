@@ -1,103 +1,119 @@
-2024-11-27 20:37:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-27 20:37:10 - Init duration for springdoc-openapi is: 1851 ms
-2024-11-27 21:25:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-27 21:35:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-27 21:36:07 - Init duration for springdoc-openapi is: 3398 ms
-2024-11-27 21:37:05 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:05 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:05 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:06 - Owner created successfully with ID: 1
-2024-11-27 21:37:06 - Successfully registered new car owner with ID: 1
-2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:21 - Successfully registered 1 cars for owner with ID: 1
-2024-11-27 21:37:21 - Successfully registered cars for owner with ID: 1
-2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:21 - Successfully registered 1 cars for owner with ID: 1
-2024-11-27 21:37:21 - Successfully registered cars for owner with ID: 1
-2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:21 - Successfully registered 1 cars for owner with ID: 1
-2024-11-27 21:37:21 - Successfully registered cars for owner with ID: 1
-2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:22 - Successfully registered 1 cars for owner with ID: 1
-2024-11-27 21:37:22 - Successfully registered cars for owner with ID: 1
-2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:22 - Successfully registered 1 cars for owner with ID: 1
-2024-11-27 21:37:22 - Successfully registered cars for owner with ID: 1
-2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
-2024-11-27 21:37:22 - Successfully registered 1 cars for owner with ID: 1
-2024-11-27 21:37:22 - Successfully registered cars for owner with ID: 1
-2024-11-27 21:37:32 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:32 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:32 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:32 - Owner created successfully with ID: 2
-2024-11-27 21:37:32 - Successfully registered new car owner with ID: 2
-2024-11-27 21:37:33 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:33 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:33 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:33 - Owner created successfully with ID: 3
-2024-11-27 21:37:33 - Successfully registered new car owner with ID: 3
-2024-11-27 21:37:33 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:33 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:33 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:33 - Owner created successfully with ID: 4
-2024-11-27 21:37:33 - Successfully registered new car owner with ID: 4
-2024-11-27 21:37:34 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:34 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:34 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 21:37:34 - Owner created successfully with ID: 5
-2024-11-27 21:37:34 - Successfully registered new car owner with ID: 5
-2024-11-27 21:37:53 - Received request to register cars for owner with ID: 2
-2024-11-27 21:37:53 - Received request to register cars for owner with ID: 2
-2024-11-27 21:37:53 - Successfully registered 1 cars for owner with ID: 2
-2024-11-27 21:37:53 - Successfully registered cars for owner with ID: 2
-2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
-2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
-2024-11-27 21:37:54 - Successfully registered 1 cars for owner with ID: 2
-2024-11-27 21:37:54 - Successfully registered cars for owner with ID: 2
-2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
-2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
-2024-11-27 21:37:54 - Successfully registered 1 cars for owner with ID: 2
-2024-11-27 21:37:54 - Successfully registered cars for owner with ID: 2
-2024-11-27 21:38:04 - Received request to fetch all owners.
-2024-11-27 21:38:04 - Received request to fetch all owners from the database.
-2024-11-27 21:38:04 - Successfully retrieved 5 owners from the database.
-2024-11-27 21:38:04 - Successfully fetched 5 owners.
-2024-11-27 21:44:35 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m14s184ms366µs300ns).
-2024-11-27 22:33:36 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-27 22:34:33 - Received new car customer registration request: CreateCustomerRequestDto(name=CYnBsQxPYvoairSABPDPO NeyImaDs, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 22:34:33 - Starting customer registration process. Request: CreateCustomerRequestDto(name=CYnBsQxPYvoairSABPDPO NeyImaDs, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 22:34:33 - Saving customer with details: CreateCustomerRequestDto(name=CYnBsQxPYvoairSABPDPO NeyImaDs, email=xxx@xxx.xxx, phoneNumber=+919999999999)
-2024-11-27 22:34:33 - Customer registered successfully with ID: 1
-2024-11-27 22:34:34 - Successfully registered new customer with ID: 1
-2024-11-27 22:35:13 - Received new car owner registration request: CreateOwnerRequestDto(name=xbrvlIWhUJ.LksW-SWLnNuSOBytlCE, email=xxx@xxx.xxx, phoneNumber=+199999999999)
-2024-11-27 22:35:13 - Starting owner creation process. Request: CreateOwnerRequestDto(name=xbrvlIWhUJ.LksW-SWLnNuSOBytlCE, email=xxx@xxx.xxx, phoneNumber=+199999999999)
-2024-11-27 22:35:13 - Saving owner with details: CreateOwnerRequestDto(name=xbrvlIWhUJ.LksW-SWLnNuSOBytlCE, email=xxx@xxx.xxx, phoneNumber=+199999999999)
-2024-11-27 22:35:13 - Owner created successfully with ID: 1
-2024-11-27 22:35:13 - Successfully registered new car owner with ID: 1
-2024-11-27 22:35:24 - Received request to fetch all owners.
-2024-11-27 22:35:24 - Received request to fetch all owners from the database.
-2024-11-27 22:35:24 - Successfully retrieved 1 owners from the database.
-2024-11-27 22:35:24 - Successfully fetched 1 owners.
-2024-11-27 22:38:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-27 22:38:11 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-11-27 22:38:11 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8081 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
-
-2024-11-27 22:38:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:05:15 - Flyway Community Edition 9.22.0 by Redgate
+2024-11-28 00:05:15 - See release notes here: https://rd.gt/416ObMi
+2024-11-28 00:05:15 - 
+2024-11-28 00:05:15 - Database: jdbc:h2:mem:testdb (H2 2.2)
+2024-11-28 00:05:15 - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-11-28 00:05:15 - Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-28 00:05:15 - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-11-28 00:05:15 - Current version of schema "PUBLIC": << Empty Schema >>
+2024-11-28 00:05:15 - Migrating schema "PUBLIC" to version "1 - create car rental tables"
+2024-11-28 00:05:15 - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.025s)
+2024-11-28 00:05:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:05:36 - Init duration for springdoc-openapi is: 1817 ms
+2024-11-28 00:05:58 - Received request to fetch owner with ID: 1
+2024-11-28 00:05:58 - Received request to fetch owner details for owner with ID: 1
+2024-11-28 00:05:58 - Owner found: 1 - John Doe
+2024-11-28 00:05:58 - Successfully fetched owner with ID: 1
+2024-11-28 00:09:29 - Flyway Community Edition 9.22.0 by Redgate
+2024-11-28 00:09:29 - See release notes here: https://rd.gt/416ObMi
+2024-11-28 00:09:29 - 
+2024-11-28 00:09:29 - Database: jdbc:h2:mem:testdb (H2 2.2)
+2024-11-28 00:09:29 - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-11-28 00:09:29 - Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-28 00:09:29 - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-11-28 00:09:29 - Current version of schema "PUBLIC": << Empty Schema >>
+2024-11-28 00:09:29 - Migrating schema "PUBLIC" to version "1 - create car rental tables"
+2024-11-28 00:09:29 - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.029s)
+2024-11-28 00:09:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:09:44 - Received request to fetch all owners.
+2024-11-28 00:09:44 - Received request to fetch all owners from the database.
+2024-11-28 00:09:44 - Successfully retrieved 10 owners from the database.
+2024-11-28 00:09:44 - Successfully fetched 10 owners.
+2024-11-28 00:14:16 - Flyway Community Edition 9.22.0 by Redgate
+2024-11-28 00:14:16 - See release notes here: https://rd.gt/416ObMi
+2024-11-28 00:14:16 - 
+2024-11-28 00:14:16 - Database: jdbc:h2:mem:testdb (H2 2.2)
+2024-11-28 00:14:16 - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-11-28 00:14:16 - Successfully validated 1 migration (execution time 00:00.011s)
+2024-11-28 00:14:16 - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-11-28 00:14:16 - Current version of schema "PUBLIC": << Empty Schema >>
+2024-11-28 00:14:16 - Migrating schema "PUBLIC" to version "1 - create car rental tables"
+2024-11-28 00:14:16 - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.025s)
+2024-11-28 00:14:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:14:49 - Received request to fetch car status and lease history for owner with ID: 1
+2024-11-28 00:14:49 - Received request to fetch car details and lease history for owner with ID: 1
+2024-11-28 00:14:49 - Owner found: 1 - John Doe
+2024-11-28 00:14:49 - Found 4 cars with status: IDLE
+2024-11-28 00:14:49 - Successfully fetched car details and lease history for owner with ID: 1
+2024-11-28 00:14:49 - Successfully fetched car status and details for owner with ID: 1
+2024-11-28 00:15:05 - Received request to fetch car status and lease history for owner with ID: 1
+2024-11-28 00:15:05 - Received request to fetch car details and lease history for owner with ID: 1
+2024-11-28 00:15:05 - Owner found: 1 - John Doe
+2024-11-28 00:15:05 - Found 3 cars with status: ON_LEASE
+2024-11-28 00:15:05 - Successfully fetched car details and lease history for owner with ID: 1
+2024-11-28 00:15:05 - Successfully fetched car status and details for owner with ID: 1
+2024-11-28 00:15:16 - Received request to fetch car status and lease history for owner with ID: 1
+2024-11-28 00:15:16 - Received request to fetch car details and lease history for owner with ID: 1
+2024-11-28 00:15:16 - Owner found: 1 - John Doe
+2024-11-28 00:15:16 - Found 3 cars with status: ON_SERVICE
+2024-11-28 00:15:16 - Successfully fetched car details and lease history for owner with ID: 1
+2024-11-28 00:15:16 - Successfully fetched car status and details for owner with ID: 1
+2024-11-28 00:15:40 - Received request to fetch car status and lease history for owner with ID: 5
+2024-11-28 00:15:40 - Received request to fetch car details and lease history for owner with ID: 5
+2024-11-28 00:15:40 - Owner found: 5 - Robert Brown
+2024-11-28 00:15:40 - Found 3 cars with status: ON_SERVICE
+2024-11-28 00:15:40 - Successfully fetched car details and lease history for owner with ID: 5
+2024-11-28 00:15:40 - Successfully fetched car status and details for owner with ID: 5
+2024-11-28 00:15:55 - Received request to fetch car status and lease history for owner with ID: 5
+2024-11-28 00:15:55 - Received request to fetch car details and lease history for owner with ID: 5
+2024-11-28 00:15:55 - Owner found: 5 - Robert Brown
+2024-11-28 00:15:55 - Found 3 cars with status: ON_LEASE
+2024-11-28 00:15:55 - Successfully fetched car details and lease history for owner with ID: 5
+2024-11-28 00:15:55 - Successfully fetched car status and details for owner with ID: 5
+2024-11-28 00:16:07 - Received request to fetch car status and lease history for owner with ID: 1
+2024-11-28 00:16:07 - Received request to fetch car details and lease history for owner with ID: 1
+2024-11-28 00:16:07 - Owner found: 1 - John Doe
+2024-11-28 00:16:07 - Found 3 cars with status: ON_LEASE
+2024-11-28 00:16:07 - Successfully fetched car details and lease history for owner with ID: 1
+2024-11-28 00:16:07 - Successfully fetched car status and details for owner with ID: 1
+2024-11-28 00:18:22 - Flyway Community Edition 9.22.0 by Redgate
+2024-11-28 00:18:22 - See release notes here: https://rd.gt/416ObMi
+2024-11-28 00:18:22 - 
+2024-11-28 00:18:22 - Database: jdbc:h2:mem:testdb (H2 2.2)
+2024-11-28 00:18:22 - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-11-28 00:18:22 - Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-28 00:18:22 - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-11-28 00:18:22 - Current version of schema "PUBLIC": << Empty Schema >>
+2024-11-28 00:18:22 - Migrating schema "PUBLIC" to version "1 - create car rental tables"
+2024-11-28 00:18:22 - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.026s)
+2024-11-28 00:18:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:18:29 - Received request to fetch car status and lease history for owner with ID: 1
+2024-11-28 00:18:29 - Received request to fetch car details and lease history for owner with ID: 1
+2024-11-28 00:18:29 - Owner found: 1 - John Doe
+2024-11-28 00:18:29 - Found 3 cars with status: ON_LEASE
+2024-11-28 00:18:29 - Successfully fetched car details and lease history for owner with ID: 1
+2024-11-28 00:18:29 - Successfully fetched car status and details for owner with ID: 1
+2024-11-28 00:18:44 - Received request to fetch car status and lease history for owner with ID: 5
+2024-11-28 00:18:44 - Received request to fetch car details and lease history for owner with ID: 5
+2024-11-28 00:18:44 - Owner found: 5 - Robert Brown
+2024-11-28 00:18:44 - Found 3 cars with status: ON_LEASE
+2024-11-28 00:18:44 - Successfully fetched car details and lease history for owner with ID: 5
+2024-11-28 00:18:44 - Successfully fetched car status and details for owner with ID: 5
+2024-11-28 00:18:53 - Received request to fetch car status and lease history for owner with ID: 7
+2024-11-28 00:18:53 - Received request to fetch car details and lease history for owner with ID: 7
+2024-11-28 00:18:53 - Owner found: 7 - Oliver Green
+2024-11-28 00:18:53 - Found 3 cars with status: ON_LEASE
+2024-11-28 00:18:53 - Successfully fetched car details and lease history for owner with ID: 7
+2024-11-28 00:18:53 - Successfully fetched car status and details for owner with ID: 7
+2024-11-28 00:20:27 - Flyway Community Edition 9.22.0 by Redgate
+2024-11-28 00:20:27 - See release notes here: https://rd.gt/416ObMi
+2024-11-28 00:20:27 - 
+2024-11-28 00:20:27 - Database: jdbc:h2:mem:testdb (H2 2.2)
+2024-11-28 00:20:27 - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-11-28 00:20:27 - Successfully validated 1 migration (execution time 00:00.015s)
+2024-11-28 00:20:27 - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-11-28 00:20:27 - Current version of schema "PUBLIC": << Empty Schema >>
+2024-11-28 00:20:27 - Migrating schema "PUBLIC" to version "1 - create car rental tables"
+2024-11-28 00:20:27 - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.022s)
+2024-11-28 00:20:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:20:35 - Init duration for springdoc-openapi is: 1299 ms

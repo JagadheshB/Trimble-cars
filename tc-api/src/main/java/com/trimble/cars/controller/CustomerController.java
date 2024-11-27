@@ -1,27 +1,33 @@
 package com.trimble.cars.controller;
 
-import com.trimble.cars.dto.request.*;
-import com.trimble.cars.dto.response.*;
+import com.trimble.cars.dto.request.CreateCustomerRequestDto;
+import com.trimble.cars.dto.request.CustomerDto;
+import com.trimble.cars.dto.request.LeaseDto;
+import com.trimble.cars.dto.request.UpdateCustomerDetailsRequestDto;
+import com.trimble.cars.dto.response.CarResponseDto;
+import com.trimble.cars.dto.response.CreateCustomerResponseDto;
+import com.trimble.cars.dto.response.CustomerStartLeaseResponseDto;
+import com.trimble.cars.dto.response.UpdateCustomerDetailsResponseDto;
 import com.trimble.cars.entity.Car;
-import com.trimble.cars.entity.Customer;
-import com.trimble.cars.entity.Lease;
-import com.trimble.cars.entity.Owner;
 import com.trimble.cars.enums.CarStatus;
-import com.trimble.cars.enums.LeaseStatus;
 import com.trimble.cars.service.serviveports.commandports.CustomerCommandService;
-import com.trimble.cars.service.serviveports.commandports.OwnerCommandService;
 import com.trimble.cars.service.serviveports.queryports.CustomerQueryService;
-import com.trimble.cars.service.serviveports.queryports.OwnerQueryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
 import java.util.List;
@@ -156,9 +162,9 @@ public class CustomerController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error")
     })
     @GetMapping("/viewCarsForLease")
-    public ResponseEntity<List<Car>> viewCarsForLease() {
+    public ResponseEntity<List<CarResponseDto>> viewCarsForLease() {
         log.info("Received request to fetch cars for lease with status: {}", CarStatus.IDLE);
-        List<Car> cars = customerQueryService.viewCarsForLease(CarStatus.IDLE);
+        List<CarResponseDto> cars = customerQueryService.viewCarsForLease(CarStatus.IDLE);
         if (cars.isEmpty()) {
             log.warn("No cars found for lease with status: {}", CarStatus.IDLE);
             return ResponseEntity.status(HttpStatus.NO_CONTENT).body(Collections.emptyList());

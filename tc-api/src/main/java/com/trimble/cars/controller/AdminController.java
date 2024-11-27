@@ -222,9 +222,9 @@ public class AdminController {
     })
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/viewCarsForLease")
-    public ResponseEntity<List<Car>> viewCarsForLease() {
+    public ResponseEntity<List<CarResponseDto>> viewCarsForLease() {
         log.info("Received request to fetch cars for lease with status: {}", CarStatus.IDLE);
-        List<Car> cars = customerQueryService.viewCarsForLease(CarStatus.IDLE);
+        List<CarResponseDto> cars = customerQueryService.viewCarsForLease(CarStatus.IDLE);
         if (cars.isEmpty()) {
             log.warn("No cars found for lease with status: {}", CarStatus.IDLE);
             return ResponseEntity.status(HttpStatus.NO_CONTENT).body(Collections.emptyList());
@@ -355,33 +355,13 @@ public class AdminController {
     })
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/getOwnerDetails")
-    public ResponseEntity<Owner> getOwnerById(
+    public ResponseEntity<OwnerResponseDto> getOwnerById(
             @RequestParam Integer ownerId) {
         log.info("Received request to fetch owner with ID: {}", ownerId);
-        Owner owner = ownerQueryService.getOwnerById(ownerId);
+        OwnerResponseDto owner = ownerQueryService.getOwnerById(ownerId);
         log.info("Successfully fetched owner with ID: {}", ownerId); // Log success
         return ResponseEntity.status(HttpStatus.OK).body(owner);
     }
-    @Operation(summary = "Get car status and details for an owner",
-            description = "Retrieves the details of cars owned by a specific owner, filtered by car status.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Owner and cars fetched successfully"),
-            @ApiResponse(responseCode = "404", description = "Owner not found"),
-            @ApiResponse(responseCode = "400", description = "Bad Request"),
-            @ApiResponse(responseCode = "500", description = "Internal Server Error")
-    })
-    @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/getOwnerDetailsByIdAndCarStatus")  // Changed to /cars to make both params query parameters
-    public ResponseEntity<Owner> getCarStatusAndDetailsAndLeaseHistory(
-            @RequestParam Integer ownerId, // Get the owner ID from the query parameter
-            @RequestParam(value = "carStatus", required = false) CarStatus carStatus) {
-
-        log.info("Received request to fetch car status and lease history for owner with ID: {}", ownerId);
-        Owner owner = ownerQueryService.getCarStatusAndDetailsAndLeaseHistoryByOwnerId(ownerId, carStatus);
-        log.info("Successfully fetched car status and details for owner with ID: {}", ownerId);
-        return ResponseEntity.status(HttpStatus.OK).body(owner);
-    }
-
     @Operation(summary = "Get all owners",
             description = "Fetches all owners from the system.")
     @ApiResponses(value = {
@@ -391,9 +371,9 @@ public class AdminController {
     })
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/getAllOwners")
-    public ResponseEntity<List<Owner>> getAllOwners() {
+    public ResponseEntity<List<OwnerResponseDto>> getAllOwners() {
         log.info("Received request to fetch all owners.");
-        List<Owner> owners = ownerQueryService.getAllOwners();
+        List<OwnerResponseDto> owners = ownerQueryService.getAllOwners();
         if (owners.isEmpty()) {
             log.warn("No owners found in the system.");
             return ResponseEntity.status(HttpStatus.NO_CONTENT).body(Collections.emptyList());

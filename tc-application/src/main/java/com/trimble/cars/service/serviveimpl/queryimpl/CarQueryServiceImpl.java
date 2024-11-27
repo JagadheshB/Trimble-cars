@@ -69,6 +69,7 @@ public class CarQueryServiceImpl implements CarQueryService {
                 .id(car.getId())
                 .model(car.getModel())
                 .variant(car.getVariant())
+                .status(car.getStatus())
                 .leaseDtoList(leaseResponseDtos)
                 .build();
     }

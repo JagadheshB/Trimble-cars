@@ -27,6 +27,7 @@ This application addresses the needs of the following personas:
 - **API Documentation**: Integrated with Swagger for easy exploration of REST APIs.
 - **Custom Logging**: Configurable log statements for better debugging and monitoring.
 - **Extensibility**: Framework for adding features like third-party authentication, integration with external car portals, and exporting lease history reports.
+- **Flyway**: Automatically manages database schema migrations. Flyway will create the necessary tables and seed mock data upon application startup.
 
 ---
 
@@ -43,6 +44,7 @@ This application addresses the needs of the following personas:
   - Lombok
   - Springdoc OpenAPI
   - ModelMapper
+  - Flyway (for automatic database schema creation and mock data population)
 
 ### Build Tool
 - Maven (POM-based configuration)
@@ -80,6 +82,11 @@ Ensure you have the following installed:
 ### Default Admin Credentials
 - Username: triblecars
 - Password: admin
+
+### Flyway Setup
+- Flyway is used to manage the database schema migrations.
+- Upon startup, Flyway will automatically create the necessary database tables and also seed mock data into the database for testing and development purposes.
+- You can customize Flyway migrations by adding SQL scripts to the tc-api/src/main/resources/db/migration/ directory.
 
 ### Testing
 1. Run tests

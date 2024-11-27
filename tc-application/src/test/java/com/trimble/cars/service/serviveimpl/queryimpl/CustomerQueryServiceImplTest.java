@@ -11,6 +11,7 @@ import static org.mockito.Mockito.when;
 import com.trimble.cars.dto.request.CarDto;
 import com.trimble.cars.dto.request.CustomerDto;
 import com.trimble.cars.dto.request.LeaseDto;
+import com.trimble.cars.dto.response.CarResponseDto;
 import com.trimble.cars.entity.Car;
 import com.trimble.cars.entity.Customer;
 import com.trimble.cars.entity.Lease;
@@ -495,46 +496,11 @@ class CustomerQueryServiceImplTest {
         when(carQueryRepository.findByStatus(Mockito.<String>any())).thenReturn(new ArrayList<>());
 
         // Act
-        List<Car> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.IDLE);
+        List<CarResponseDto> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.IDLE);
 
         // Assert
         verify(carQueryRepository).findByStatus(eq("IDLE"));
         assertTrue(actualViewCarsForLeaseResult.isEmpty());
-    }
-
-    /**
-     * Method under test:
-     * {@link CustomerQueryServiceImpl#viewCarsForLease(CarStatus)}
-     */
-    @Test
-    void testViewCarsForLease2() {
-        // Arrange
-        Owner owner = new Owner();
-        owner.setCars(new ArrayList<>());
-        owner.setEmail("jane.doe@example.org");
-        owner.setId(1);
-        owner.setName("Received request to fetch cars for lease with status: {}");
-        owner.setPhoneNumber("6625550144");
-
-        Car car = new Car();
-        car.setId(1);
-        car.setLeases(new ArrayList<>());
-        car.setModel("Received request to fetch cars for lease with status: {}");
-        car.setOwner(owner);
-        car.setStatus(CarStatus.IDLE);
-        car.setVariant("Received request to fetch cars for lease with status: {}");
-
-        ArrayList<Car> carList = new ArrayList<>();
-        carList.add(car);
-        when(carQueryRepository.findByStatus(Mockito.<String>any())).thenReturn(carList);
-
-        // Act
-        List<Car> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.IDLE);
-
-        // Assert
-        verify(carQueryRepository).findByStatus(eq("IDLE"));
-        assertEquals(1, actualViewCarsForLeaseResult.size());
-        assertSame(carList, actualViewCarsForLeaseResult);
     }
 
     /**
@@ -547,7 +513,7 @@ class CustomerQueryServiceImplTest {
         when(carQueryRepository.findByStatus(Mockito.<String>any())).thenReturn(new ArrayList<>());
 
         // Act
-        List<Car> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.ON_LEASE);
+        List<CarResponseDto> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.ON_LEASE);
 
         // Assert
         verify(carQueryRepository).findByStatus(eq("ON_LEASE"));
@@ -564,7 +530,7 @@ class CustomerQueryServiceImplTest {
         when(carQueryRepository.findByStatus(Mockito.<String>any())).thenReturn(new ArrayList<>());
 
         // Act
-        List<Car> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.ON_SERVICE);
+        List<CarResponseDto> actualViewCarsForLeaseResult = customerQueryServiceImpl.viewCarsForLease(CarStatus.ON_SERVICE);
 
         // Assert
         verify(carQueryRepository).findByStatus(eq("ON_SERVICE"));

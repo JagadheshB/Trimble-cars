@@ -6,10 +6,6 @@ import com.trimble.cars.dto.request.UpdateOwnerDetailsRequestDto;
 import com.trimble.cars.dto.response.CreateOwnerResponseDto;
 import com.trimble.cars.dto.response.RegisterCarResponseDto;
 import com.trimble.cars.dto.response.UpdateOwnerDetailsResponseDto;
-import com.trimble.cars.entity.Car;
-import com.trimble.cars.entity.Owner;
-
-import java.util.List;
 
 public interface OwnerCommandService {
 

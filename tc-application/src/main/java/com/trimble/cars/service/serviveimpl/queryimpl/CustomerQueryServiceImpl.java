@@ -3,6 +3,8 @@ package com.trimble.cars.service.serviveimpl.queryimpl;
 import com.trimble.cars.dto.request.CarDto;
 import com.trimble.cars.dto.request.CustomerDto;
 import com.trimble.cars.dto.request.LeaseDto;
+import com.trimble.cars.dto.response.CarResponseDto;
+import com.trimble.cars.dto.response.LeaseResponseDto;
 import com.trimble.cars.entity.Car;
 import com.trimble.cars.entity.Customer;
 import com.trimble.cars.entity.Lease;
@@ -72,41 +74,25 @@ public class CustomerQueryServiceImpl implements CustomerQueryService {
             throw ErrorException.internalError("InternalError", "Unexpected error while retrieving lease history for customer ID: " + customerId);
         }
     }
-    private List<LeaseDto> mapLeasesToDtos(List<Lease> leases) {
-        return leases.stream()
-                .map(this::mapToLeaseDto)
-                .collect(Collectors.toList());
-    }
-    private LeaseDto mapToLeaseDto(Lease lease) {
-        CarDto carDto = new CarDto();
-        carDto.setId(lease.getCar().getId());
-        carDto.setModel(lease.getCar().getModel());
-        carDto.setVariant(lease.getCar().getVariant());
 
-        LeaseDto leaseDto = new LeaseDto();
-        leaseDto.setId(lease.getId());
-        leaseDto.setStartDate(lease.getStartDate());
-        leaseDto.setEndDate(lease.getEndDate());
-        leaseDto.setStatus(lease.getStatus());
-        leaseDto.setCarDto(carDto);
-
-        return leaseDto;
-    }
 
     @Override
-    public List<Car> viewCarsForLease(CarStatus status) {
-        log.info("Received request to fetch cars for lease with status: {}", status);
+    public List<CarResponseDto> viewCarsForLease(CarStatus status) {
+        log.info("Received request to fetch cars with status: {}", status);
         try {
             List<Car> cars = carQueryRepository.findByStatus(status.toString());
             if (cars.isEmpty()) {
-                log.warn("No cars found for lease with status: {}", status);
-                return Collections.emptyList();
+                log.warn("No cars found with status: {}", status);
+            } else {
+                log.info("Successfully fetched {} cars with status: {}", cars.size(), status);
             }
-            log.info("Successfully fetched {} cars for lease with status: {}", cars.size(), status);
-            return cars;
+            return cars.stream()
+                    .map(this::mapCarToCarResponseDto)
+                    .collect(Collectors.toList());
         } catch (Exception e) {
-            log.error("Error retrieving cars for lease with status:{} ", status , e);
-            throw ErrorException.internalError("InternalError", "Error retrieving cars for lease with status");
+            String errorMessage = "Error retrieving cars with status: " + status;
+            log.error(errorMessage, e);
+            throw ErrorException.internalError("InternalError", errorMessage, e);
         }
     }
 
@@ -154,6 +140,49 @@ public class CustomerQueryServiceImpl implements CustomerQueryService {
                 .endDate(lease.getEndDate())
                 .status(lease.getStatus())
                 .carDto(carDto)
+                .build();
+    }
+
+    private List<LeaseDto> mapLeasesToDtos(List<Lease> leases) {
+        return leases.stream()
+                .map(this::mapToLeaseDto)
+                .collect(Collectors.toList());
+    }
+    private LeaseDto mapToLeaseDto(Lease lease) {
+        CarDto carDto = new CarDto();
+        carDto.setId(lease.getCar().getId());
+        carDto.setModel(lease.getCar().getModel());
+        carDto.setVariant(lease.getCar().getVariant());
+
+        LeaseDto leaseDto = new LeaseDto();
+        leaseDto.setId(lease.getId());
+        leaseDto.setStartDate(lease.getStartDate());
+        leaseDto.setEndDate(lease.getEndDate());
+        leaseDto.setStatus(lease.getStatus());
+        leaseDto.setCarDto(carDto);
+
+        return leaseDto;
+    }
+
+    private CarResponseDto mapCarToCarResponseDto(Car car) {
+        List<LeaseResponseDto> leaseResponseDtos = car.getLeases().stream()
+                .map(this::mapLeaseToLeaseResponseDto)  // Map each Lease entity to LeaseResponseDto
+                .collect(Collectors.toList());
+
+        return CarResponseDto.builder()
+                .id(car.getId())
+                .model(car.getModel())
+                .variant(car.getVariant())
+                .status(car.getStatus())
+                .leaseDtoList(leaseResponseDtos)
+                .build();
+    }
+    private LeaseResponseDto mapLeaseToLeaseResponseDto(Lease lease) {
+        return LeaseResponseDto.builder()
+                .id(lease.getId())
+                .startDate(lease.getStartDate())
+                .endDate(lease.getEndDate())
+                .status(lease.getStatus())
                 .build();
     }
 

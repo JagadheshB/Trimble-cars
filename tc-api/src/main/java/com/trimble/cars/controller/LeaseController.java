@@ -1,9 +1,7 @@
 package com.trimble.cars.controller;
 
 import com.trimble.cars.dto.request.LeaseDto;
-import com.trimble.cars.entity.Lease;
 import com.trimble.cars.enums.LeaseStatus;
-import com.trimble.cars.service.serviveports.commandports.OwnerCommandService;
 import com.trimble.cars.service.serviveports.queryports.LeaseQueryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

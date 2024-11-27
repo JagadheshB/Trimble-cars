@@ -5,9 +5,9 @@ import com.trimble.cars.dto.request.LeaseDto;
 import com.trimble.cars.dto.request.RegisterCarRequestDto;
 import com.trimble.cars.dto.request.UpdateOwnerDetailsRequestDto;
 import com.trimble.cars.dto.response.CreateOwnerResponseDto;
+import com.trimble.cars.dto.response.OwnerResponseDto;
 import com.trimble.cars.dto.response.RegisterCarResponseDto;
 import com.trimble.cars.dto.response.UpdateOwnerDetailsResponseDto;
-import com.trimble.cars.entity.Car;
 import com.trimble.cars.entity.Owner;
 import com.trimble.cars.enums.CarStatus;
 import com.trimble.cars.service.serviveports.commandports.OwnerCommandService;
@@ -20,7 +20,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
 import java.util.List;
@@ -104,32 +111,13 @@ public class OwnerController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error")
     })
     @GetMapping("/getOwnerDetails")
-    public ResponseEntity<Owner> getOwnerById(
+    public ResponseEntity<OwnerResponseDto> getOwnerById(
             @RequestParam Integer ownerId) {
         log.info("Received request to fetch owner with ID: {}", ownerId);
-        Owner owner = ownerQueryService.getOwnerById(ownerId);
+        OwnerResponseDto owner = ownerQueryService.getOwnerById(ownerId);
         log.info("Successfully fetched owner with ID: {}", ownerId); // Log success
         return ResponseEntity.status(HttpStatus.OK).body(owner);
     }
-    @Operation(summary = "Get car status and details for an owner",
-            description = "Retrieves the details of cars owned by a specific owner, filtered by car status.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Owner and cars fetched successfully"),
-            @ApiResponse(responseCode = "404", description = "Owner not found"),
-            @ApiResponse(responseCode = "400", description = "Bad Request"),
-            @ApiResponse(responseCode = "500", description = "Internal Server Error")
-    })
-    @GetMapping("/getOwnerDetailsByIdAndCarStatus")  // Changed to /cars to make both params query parameters
-    public ResponseEntity<Owner> getCarStatusAndDetailsAndLeaseHistory(
-            @RequestParam Integer ownerId, // Get the owner ID from the query parameter
-            @RequestParam(value = "carStatus", required = false) CarStatus carStatus) {
-
-        log.info("Received request to fetch car status and lease history for owner with ID: {}", ownerId);
-        Owner owner = ownerQueryService.getCarStatusAndDetailsAndLeaseHistoryByOwnerId(ownerId, carStatus);
-        log.info("Successfully fetched car status and details for owner with ID: {}", ownerId);
-        return ResponseEntity.status(HttpStatus.OK).body(owner);
-    }
-
     @Operation(summary = "Get all owners",
             description = "Fetches all owners from the system.")
     @ApiResponses(value = {
@@ -138,9 +126,9 @@ public class OwnerController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error")
     })
     @GetMapping("/getAllOwners")
-    public ResponseEntity<List<Owner>> getAllOwners() {
+    public ResponseEntity<List<OwnerResponseDto>> getAllOwners() {
         log.info("Received request to fetch all owners.");
-        List<Owner> owners = ownerQueryService.getAllOwners();
+        List<OwnerResponseDto> owners = ownerQueryService.getAllOwners();
         if (owners.isEmpty()) {
             log.warn("No owners found in the system.");
             return ResponseEntity.status(HttpStatus.NO_CONTENT).body(Collections.emptyList());
