@@ -79,6 +79,8 @@ Ensure you have the following installed:
 
 ![alt text](image.png)
 
+5. Enable Lombok annotation process in ide.
+
 ### Default Admin Credentials
 - Username: triblecars
 - Password: admin
