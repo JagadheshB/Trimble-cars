@@ -64,7 +64,8 @@ Ensure you have the following installed:
    cd trimble-cars
 
 2. Build the project
-   ```mvn clean install
+   ```bash
+   mvn clean install
 
 3. Run the application
 - Run the main application located in tc-application under the src/main/java/com/trimble/cars/TrimbleCarsMain class.
@@ -82,7 +83,8 @@ Ensure you have the following installed:
 
 ### Testing
 1. Run tests
-    ``` mvn test
+    ```bash 
+    mvn test
 
 2. Test files:
     - Located in the tc-application/src/test/java directory under respective modules.
