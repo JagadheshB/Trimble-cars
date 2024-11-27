@@ -1,0 +1,71 @@
+spring:
+  main:
+    log-startup-info: false
+
+  application:
+    name: Trimble Cars
+    main.banner-mode: CONSOLE
+    output.ansi.enabled: always
+    thymeleaf.cache: false
+  profiles:
+    active: local
+
+server:
+  port: 8081
+
+---
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+---
+
+spring:
+  security:
+    user:
+      name: triblecars
+      password: admin
+
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    operationsSorter: method
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+
+
+logging:
+  level:
+    root: INFO
+    com.trimble: DEBUG
+    org.springframework: WARN  # Suppress Spring-related logs
+    org.hibernate: WARN  # Suppress Hibernate logs
+    org.springframework.boot: WARN  # Suppress Spring Boot logs
+    org.apache: WARN  # Suppress Apache Tomcat logs
+    com.zaxxer.hikari: WARN  # Suppress HikariCP logs
+    javax: WARN  # Suppress JavaX related logs
+
+  file:
+    name: tc-common/src/main/java/com/trimble/cars/logs/application.log
+
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"   # Custom log format for file logs
+
+  rolling-policy:
+    max-size: 10MB
+    max-history: 30
+

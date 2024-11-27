@@ -1,0 +1,103 @@
+2024-11-27 20:37:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 20:37:10 - Init duration for springdoc-openapi is: 1851 ms
+2024-11-27 21:25:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:35:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:36:07 - Init duration for springdoc-openapi is: 3398 ms
+2024-11-27 21:37:05 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:05 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:05 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:06 - Owner created successfully with ID: 1
+2024-11-27 21:37:06 - Successfully registered new car owner with ID: 1
+2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:21 - Successfully registered 1 cars for owner with ID: 1
+2024-11-27 21:37:21 - Successfully registered cars for owner with ID: 1
+2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:21 - Successfully registered 1 cars for owner with ID: 1
+2024-11-27 21:37:21 - Successfully registered cars for owner with ID: 1
+2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:21 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:21 - Successfully registered 1 cars for owner with ID: 1
+2024-11-27 21:37:21 - Successfully registered cars for owner with ID: 1
+2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:22 - Successfully registered 1 cars for owner with ID: 1
+2024-11-27 21:37:22 - Successfully registered cars for owner with ID: 1
+2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:22 - Successfully registered 1 cars for owner with ID: 1
+2024-11-27 21:37:22 - Successfully registered cars for owner with ID: 1
+2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:22 - Received request to register cars for owner with ID: 1
+2024-11-27 21:37:22 - Successfully registered 1 cars for owner with ID: 1
+2024-11-27 21:37:22 - Successfully registered cars for owner with ID: 1
+2024-11-27 21:37:32 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:32 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:32 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:32 - Owner created successfully with ID: 2
+2024-11-27 21:37:32 - Successfully registered new car owner with ID: 2
+2024-11-27 21:37:33 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:33 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:33 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:33 - Owner created successfully with ID: 3
+2024-11-27 21:37:33 - Successfully registered new car owner with ID: 3
+2024-11-27 21:37:33 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:33 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:33 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:33 - Owner created successfully with ID: 4
+2024-11-27 21:37:33 - Successfully registered new car owner with ID: 4
+2024-11-27 21:37:34 - Received new car owner registration request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:34 - Starting owner creation process. Request: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:34 - Saving owner with details: CreateOwnerRequestDto(name=otgtoGCg iCcndjMnoFMoJsKZypjfx, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 21:37:34 - Owner created successfully with ID: 5
+2024-11-27 21:37:34 - Successfully registered new car owner with ID: 5
+2024-11-27 21:37:53 - Received request to register cars for owner with ID: 2
+2024-11-27 21:37:53 - Received request to register cars for owner with ID: 2
+2024-11-27 21:37:53 - Successfully registered 1 cars for owner with ID: 2
+2024-11-27 21:37:53 - Successfully registered cars for owner with ID: 2
+2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
+2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
+2024-11-27 21:37:54 - Successfully registered 1 cars for owner with ID: 2
+2024-11-27 21:37:54 - Successfully registered cars for owner with ID: 2
+2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
+2024-11-27 21:37:54 - Received request to register cars for owner with ID: 2
+2024-11-27 21:37:54 - Successfully registered 1 cars for owner with ID: 2
+2024-11-27 21:37:54 - Successfully registered cars for owner with ID: 2
+2024-11-27 21:38:04 - Received request to fetch all owners.
+2024-11-27 21:38:04 - Received request to fetch all owners from the database.
+2024-11-27 21:38:04 - Successfully retrieved 5 owners from the database.
+2024-11-27 21:38:04 - Successfully fetched 5 owners.
+2024-11-27 21:44:35 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m14s184ms366µs300ns).
+2024-11-27 22:33:36 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 22:34:33 - Received new car customer registration request: CreateCustomerRequestDto(name=CYnBsQxPYvoairSABPDPO NeyImaDs, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 22:34:33 - Starting customer registration process. Request: CreateCustomerRequestDto(name=CYnBsQxPYvoairSABPDPO NeyImaDs, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 22:34:33 - Saving customer with details: CreateCustomerRequestDto(name=CYnBsQxPYvoairSABPDPO NeyImaDs, email=xxx@xxx.xxx, phoneNumber=+919999999999)
+2024-11-27 22:34:33 - Customer registered successfully with ID: 1
+2024-11-27 22:34:34 - Successfully registered new customer with ID: 1
+2024-11-27 22:35:13 - Received new car owner registration request: CreateOwnerRequestDto(name=xbrvlIWhUJ.LksW-SWLnNuSOBytlCE, email=xxx@xxx.xxx, phoneNumber=+199999999999)
+2024-11-27 22:35:13 - Starting owner creation process. Request: CreateOwnerRequestDto(name=xbrvlIWhUJ.LksW-SWLnNuSOBytlCE, email=xxx@xxx.xxx, phoneNumber=+199999999999)
+2024-11-27 22:35:13 - Saving owner with details: CreateOwnerRequestDto(name=xbrvlIWhUJ.LksW-SWLnNuSOBytlCE, email=xxx@xxx.xxx, phoneNumber=+199999999999)
+2024-11-27 22:35:13 - Owner created successfully with ID: 1
+2024-11-27 22:35:13 - Successfully registered new car owner with ID: 1
+2024-11-27 22:35:24 - Received request to fetch all owners.
+2024-11-27 22:35:24 - Received request to fetch all owners from the database.
+2024-11-27 22:35:24 - Successfully retrieved 1 owners from the database.
+2024-11-27 22:35:24 - Successfully fetched 1 owners.
+2024-11-27 22:38:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 22:38:11 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-11-27 22:38:11 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2024-11-27 22:38:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
