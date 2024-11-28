@@ -82,7 +82,7 @@ Ensure you have the following installed:
 5. Enable Lombok annotation process in ide.
 
 ### Default Admin Credentials
-- Username: triblecars
+- Username: trimblecars
 - Password: admin
 
 ### Flyway Setup
